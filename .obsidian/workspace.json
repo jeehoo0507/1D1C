@@ -1,0 +1,220 @@
+{
+  "main": {
+    "id": "2c10ef135408be89",
+    "type": "split",
+    "children": [
+      {
+        "id": "0bdd2c14bd404360",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "883c8d4991810ec3",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Git 고수되기.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Git 고수되기"
+            }
+          },
+          {
+            "id": "a05d3ed3c9f66442",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "5. pull request.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "5. pull request"
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "b61c1771aed57c12",
+    "type": "split",
+    "children": [
+      {
+        "id": "4e63c16480031f4a",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "5738fd30df3ba1a5",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "파일 탐색기"
+            }
+          },
+          {
+            "id": "d2b94617fedfe41c",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "검색"
+            }
+          },
+          {
+            "id": "79337029582a9fc7",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "북마크"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 200
+  },
+  "right": {
+    "id": "88f091c0a74e147f",
+    "type": "split",
+    "children": [
+      {
+        "id": "f3a66601ba73146f",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "5bba592cb4afbd71",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "1. add, commit.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "1. add, commit 의 백링크"
+            }
+          },
+          {
+            "id": "fda2dd9dd6134aa9",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "나가는 링크"
+            }
+          },
+          {
+            "id": "a4718949e6bb0873",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "태그"
+            }
+          },
+          {
+            "id": "dbe8876556e9d301",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "모든 속성"
+            }
+          },
+          {
+            "id": "3c51ced28ce2ab4f",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "개요"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:빠른 전환기 열기": false,
+      "graph:그래프 뷰 열기": false,
+      "canvas:새 캔버스 만들기": false,
+      "daily-notes:오늘의 일일 노트 열기": false,
+      "templates:템플릿 삽입": false,
+      "command-palette:명령어 팔레트 열기": false,
+      "bases:새 베이스 생성하기": false,
+      "obsidian-excalidraw-plugin:New drawing": false,
+      "realclaudian:Open Claudian": false
+    }
+  },
+  "active": "a05d3ed3c9f66442",
+  "lastOpenFiles": [
+    "4, github 연결.md",
+    "Git/4, github 연결.md",
+    "5. pull request.md",
+    "Git/3. git branch.md",
+    "Git/2. git diff, difftool.md",
+    "Git/1. add, commit.md",
+    "Git/0. Git 고수되기.md",
+    "python/위키독스.md",
+    "img/Pasted image 20260717043524.png",
+    "1. add, commit.pdf",
+    "img/Pasted image 20260717013627.png",
+    "img/Pasted image 20260717013609.png",
+    "img",
+    "Pasted image 20260717013526.png",
+    "Git",
+    "python"
+  ]
+}
