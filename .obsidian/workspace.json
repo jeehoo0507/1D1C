@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "5. pull request.md",
+                "file": "Git/0. Git 고수되기.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "5. pull request"
+              "title": "0. Git 고수되기"
             }
           }
         ],
@@ -198,15 +198,16 @@
       "realclaudian:Open Claudian": false
     }
   },
-  "active": "a05d3ed3c9f66442",
+  "active": "5738fd30df3ba1a5",
   "lastOpenFiles": [
-    "4, github 연결.md",
-    "Git/4, github 연결.md",
-    "5. pull request.md",
-    "Git/3. git branch.md",
-    "Git/2. git diff, difftool.md",
     "Git/1. add, commit.md",
     "Git/0. Git 고수되기.md",
+    "Git/4, github 연결.md",
+    "README.md",
+    "Git/5. pull request.md",
+    "4, github 연결.md",
+    "Git/3. git branch.md",
+    "Git/2. git diff, difftool.md",
     "python/위키독스.md",
     "img/Pasted image 20260717043524.png",
     "1. add, commit.pdf",
