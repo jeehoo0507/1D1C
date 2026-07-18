@@ -1,20 +1,24 @@
 {
   "main": {
-    "id": "2c10ef135408be89",
+    "id": "ecb9c58b430e6350",
     "type": "split",
     "children": [
       {
-        "id": "0bdd2c14bd404360",
+        "id": "f341308cbdf2cde8",
         "type": "tabs",
         "children": [
           {
-            "id": "883c8d4991810ec3",
+            "id": "91cf4ef9d0f904b1",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "그래프 뷰"
+              "type": "markdown",
+              "state": {
+                "file": "doj/2026 GSHS 2-1 1학기 PS 대회 Open Contest/A. JANE DOE.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "A. JANE DOE"
             }
           }
         ]
@@ -23,15 +27,15 @@
     "direction": "vertical"
   },
   "left": {
-    "id": "b61c1771aed57c12",
+    "id": "f5d8040c487e5397",
     "type": "split",
     "children": [
       {
-        "id": "4e63c16480031f4a",
+        "id": "7fd151d585b24b9b",
         "type": "tabs",
         "children": [
           {
-            "id": "5738fd30df3ba1a5",
+            "id": "488a704300daa15c",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -44,7 +48,7 @@
             }
           },
           {
-            "id": "d2b94617fedfe41c",
+            "id": "58a4125cd2d0c928",
             "type": "leaf",
             "state": {
               "type": "search",
@@ -61,7 +65,7 @@
             }
           },
           {
-            "id": "79337029582a9fc7",
+            "id": "939186db36686147",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
@@ -74,23 +78,23 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 331.5
   },
   "right": {
-    "id": "88f091c0a74e147f",
+    "id": "a29836c3249c1aa6",
     "type": "split",
     "children": [
       {
-        "id": "f3a66601ba73146f",
+        "id": "7840a1b7847fe12f",
         "type": "tabs",
         "children": [
           {
-            "id": "5bba592cb4afbd71",
+            "id": "00717287e1317db1",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-                "file": "1. add, commit.md",
+                "file": "다리놓기.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -100,24 +104,25 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "1. add, commit 의 백링크"
+              "title": "다리놓기 의 백링크"
             }
           },
           {
-            "id": "fda2dd9dd6134aa9",
+            "id": "40eb201f8f872311",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "다리놓기.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "나가는 링크"
+              "title": "다리놓기 의 나가는 링크"
             }
           },
           {
-            "id": "a4718949e6bb0873",
+            "id": "accc37bf28953eb9",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -132,7 +137,7 @@
             }
           },
           {
-            "id": "dbe8876556e9d301",
+            "id": "cc95b61e48f0c9f6",
             "type": "leaf",
             "state": {
               "type": "all-properties",
@@ -146,17 +151,18 @@
             }
           },
           {
-            "id": "3c51ced28ce2ab4f",
+            "id": "deab0a1791c0b32c",
             "type": "leaf",
             "state": {
               "type": "outline",
               "state": {
+                "file": "다리놓기.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "개요"
+              "title": "다리놓기 의 개요"
             }
           }
         ]
@@ -174,57 +180,21 @@
       "daily-notes:오늘의 일일 노트 열기": false,
       "templates:템플릿 삽입": false,
       "command-palette:명령어 팔레트 열기": false,
-      "bases:새 베이스 생성하기": false,
-      "obsidian-excalidraw-plugin:New drawing": false
+      "bases:새 베이스 생성하기": false
     }
   },
-  "active": "883c8d4991810ec3",
+  "active": "488a704300daa15c",
   "lastOpenFiles": [
-    "python/위키독스.md",
-    "ps/doj/2026 GSHS 2-1 1학기 PS 대회 Open Contest/A. JANE DOE.md",
-    "ps/A. JANE DOE.md",
-    "ps/무제.md",
-    "img/Pasted image 20260717043524.png",
-    "Git/5. pull request.md",
-    "Git/0. Git 고수되기.md",
-    "matex/미적분/유제/12-18 유제 12-18.md",
-    "matex/미적분/유제/06-02 유제 6-2.md",
-    "ps/doj/2026 GSHS 2-1 1학기 PS 대회 Open Contest",
-    "ps/2026 GSHS 2-1 1학기 PS 대회 Open Contest",
-    "ps/무제",
-    "matex/미적분/1. 함수의 극한.md",
-    "matex/미적분/8. 속도ㆍ가속도와 미분.md",
-    "matex/대수/1. 지수.md",
-    "matex/미적분/유제/05-12 유제 5-12.md",
-    "matex/tmp/pdfs/algebra_examples_latex_audit/chrome-profile/Default/Extensions/ghbmnnjooekpmoecnnnilnnbdlolhkhi/1.107.1_0/_locales/zh_TW",
-    "matex/tmp/pdfs/algebra_examples_latex_audit/chrome-profile/Default/Extensions/ghbmnnjooekpmoecnnnilnnbdlolhkhi/1.107.1_0/_locales/zh_HK",
-    "matex/tmp/pdfs/algebra_examples_latex_audit/chrome-profile/Default/Extensions/ghbmnnjooekpmoecnnnilnnbdlolhkhi/1.107.1_0/_locales/zh_CN",
-    "matex/tmp/pdfs/algebra_examples_latex_audit/chrome-profile/Default/Extensions/ghbmnnjooekpmoecnnnilnnbdlolhkhi/1.107.1_0/_locales/pt_PT",
-    "matex/tmp/pdfs/algebra_examples_latex_audit/chrome-profile/Default/Extensions/ghbmnnjooekpmoecnnnilnnbdlolhkhi/1.107.1_0/_locales/pt_BR",
-    "matex/tmp/pdfs/algebra_examples_latex_audit/chrome-profile/Default/Extensions/ghbmnnjooekpmoecnnnilnnbdlolhkhi/1.107.1_0/_locales/fr_CA",
-    "matex/tmp/pdfs/algebra_examples_latex_audit/chrome-profile/Default/Extensions/ghbmnnjooekpmoecnnnilnnbdlolhkhi/1.107.1_0/_locales/zu",
-    "matex/README.md",
-    "matex/최적의 풀이/대수/01 지수/연습문제 1-03.md",
-    "matex/최적의 풀이/대수/01 지수/연습문제 1-02.md",
-    "matex/최적의 풀이/대수/01 지수/00 목차.md",
-    "matex/미적분1/연습문제/01-11 연습문제 1-11.md",
-    "matex/미적분1/연습문제/01-01 연습문제 1-1.md",
-    "matex/미적분/연습문제/03-02 연습문제 3-2.md",
-    "matex/미적분/3. 함수의 미분.md",
-    "matex/미적분/2. 함수의 연속.md",
-    "matex/미적분1/2. 함수의 연속.md",
-    "matex/미적분1/1. 함수의 극한.md",
-    "README.md",
-    "MLDL/z-탐구논총/attention is all you need.md",
-    "MLDL/z-탐구논총/diffusion drive 와 RL - 스스로 학습하는 디퓨전 기반 자율주행 자동차.md",
-    "MLDL/Pasted Image 20260618230320_038.png",
-    "MLDL/Pasted Image 20260617134555_630.png",
-    "MLDL/Pasted Image 20260617134512_673.png",
-    "MLDL/Pasted Image 20260603202144_012.png",
-    "MLDL/images.jpeg",
-    "MLDL/1-img/자료 사진.png",
-    "MLDL/1-img/image-31.png",
-    "MLDL/1-img/Pasted Image 20260521120527_973.png",
-    "MLDL/1-img/image-32.png"
+    "다리놓기.md",
+    "doj/2026 GSHS 2-1 1학기 PS 대회 Open Contest/A. JANE DOE.md",
+    "doj/2026 GSHS 2-1 1학기 PS 대회 Open Contest",
+    "jungol/포크.md",
+    "doj/DOJ Beginner Contest 3/67 sequence 2.md",
+    "doj/DOJ Beginner Contest 3/67 sequence 1.md",
+    "codeforces/대회/Codeforces Round 1102 (Div. 2)/B번 코드.md",
+    "codeforces/대회/Codeforces Round 1102 (Div. 2)/B번 구상.md",
+    "codeforces/대회/Codeforces Round 1102 (Div. 2)/A번 코드.md",
+    "codeforces/대회/Codeforces Round 1102 (Div. 2)/A번 구상.md",
+    "img/Pasted image 20260526172815.png"
   ]
 }
