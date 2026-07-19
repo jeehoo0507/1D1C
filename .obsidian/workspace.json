@@ -11,10 +11,14 @@
             "id": "883c8d4991810ec3",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "그래프 뷰"
+              "type": "markdown",
+              "state": {
+                "file": "README.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "README"
             }
           }
         ]
@@ -178,7 +182,7 @@
       "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "883c8d4991810ec3",
+  "active": "5738fd30df3ba1a5",
   "lastOpenFiles": [
     "python/위키독스.md",
     "ps/doj/2026 GSHS 2-1 1학기 PS 대회 Open Contest/A. JANE DOE.md",
