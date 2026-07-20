@@ -1,0 +1,190 @@
+{
+  "main": {
+    "id": "a24a0b66fe7518f0",
+    "type": "split",
+    "children": [
+      {
+        "id": "a0f882d6b66f1811",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "23ca6e41e16d64c9",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "행렬 연산.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "행렬 연산"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "dea54491149404d3",
+    "type": "mobile-drawer",
+    "children": [
+      {
+        "id": "2bb7e62f4ad1b0b4",
+        "type": "leaf",
+        "state": {
+          "type": "file-explorer",
+          "state": {
+            "sortOrder": "alphabetical",
+            "autoReveal": false
+          },
+          "icon": "lucide-folder-closed",
+          "title": "파일 탐색기"
+        }
+      },
+      {
+        "id": "c4b8833ba3417d36",
+        "type": "leaf",
+        "state": {
+          "type": "search",
+          "state": {
+            "query": "",
+            "matchingCase": false,
+            "explainSearch": false,
+            "collapseAll": false,
+            "extraContext": false,
+            "sortOrder": "alphabetical"
+          },
+          "icon": "lucide-search",
+          "title": "검색"
+        }
+      },
+      {
+        "id": "88f7bb0a839bc4bc",
+        "type": "leaf",
+        "state": {
+          "type": "tag",
+          "state": {
+            "sortOrder": "frequency",
+            "useHierarchy": true,
+            "showSearch": false,
+            "searchQuery": ""
+          },
+          "icon": "lucide-tags",
+          "title": "태그"
+        }
+      },
+      {
+        "id": "f6293003ec9e113e",
+        "type": "leaf",
+        "state": {
+          "type": "all-properties",
+          "state": {
+            "sortOrder": "frequency",
+            "showSearch": false,
+            "searchQuery": ""
+          },
+          "icon": "lucide-archive",
+          "title": "모든 속성"
+        }
+      },
+      {
+        "id": "71bcd76ba51ff8c5",
+        "type": "leaf",
+        "state": {
+          "type": "bookmarks",
+          "state": {},
+          "icon": "lucide-bookmark",
+          "title": "북마크"
+        }
+      }
+    ],
+    "currentTab": 0
+  },
+  "right": {
+    "id": "c959e4e8a6011b11",
+    "type": "mobile-drawer",
+    "children": [
+      {
+        "id": "60c0e25f022041de",
+        "type": "leaf",
+        "state": {
+          "type": "backlink",
+          "state": {
+            "file": "행렬 연산.md",
+            "collapseAll": false,
+            "extraContext": false,
+            "sortOrder": "alphabetical",
+            "showSearch": false,
+            "searchQuery": "",
+            "backlinkCollapsed": false,
+            "unlinkedCollapsed": true
+          },
+          "icon": "links-coming-in",
+          "title": "백링크"
+        }
+      },
+      {
+        "id": "e79e4ff90c5ecab4",
+        "type": "leaf",
+        "state": {
+          "type": "outgoing-link",
+          "state": {
+            "file": "행렬 연산.md",
+            "linksCollapsed": false,
+            "unlinkedCollapsed": true
+          },
+          "icon": "links-going-out",
+          "title": "나가는 링크"
+        }
+      },
+      {
+        "id": "8eb53a03bbbc9276",
+        "type": "leaf",
+        "state": {
+          "type": "outline",
+          "state": {
+            "file": "행렬 연산.md",
+            "followCursor": false,
+            "showSearch": false,
+            "searchQuery": ""
+          },
+          "icon": "lucide-list",
+          "title": "개요"
+        }
+      }
+    ],
+    "currentTab": 0
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:빠른 전환기 열기": false,
+      "graph:그래프 뷰 열기": false,
+      "canvas:새 캔버스 만들기": false,
+      "daily-notes:오늘의 일일 노트 열기": false,
+      "templates:템플릿 삽입": false,
+      "command-palette:명령어 팔레트 열기": false,
+      "bases:새 베이스 생성하기": false,
+      "obsidian-excalidraw-plugin:New drawing": false
+    }
+  },
+  "active": "23ca6e41e16d64c9",
+  "lastOpenFiles": [
+    "diffusion drive 와 RL - 스스로 학습하는 디퓨전 기반 자율주행 자동차.md",
+    "양배추 드론-초안.md",
+    "양배추 드론-초안 복사본.md",
+    "문제1.md",
+    "문제2.md",
+    "무제 2.md",
+    "무제.md",
+    "무제 1.md",
+    "Machine Learning(머신러닝)/1. Supervised Learning(지도 학습)/8 . svm.md",
+    "Machine Learning(머신러닝)/1. Supervised Learning(지도 학습)/1. Linear Regression.md",
+    "e - Statistics(기초통계학)/1. 변수.md",
+    "Excalidraw/Drawing 2026-04-08 20.36.28.excalidraw.md",
+    "1-img/Pasted Image 20260530145118_769.png",
+    "1-img/Pasted Image 20260530145251_345.png",
+    "1-img/Pasted Image 20260530145213_853.png"
+  ]
+}
