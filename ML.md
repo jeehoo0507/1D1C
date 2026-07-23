@@ -1,0 +1,7 @@
+지도학습(Supervised Learning)에는 크게 회귀(regression)와 분류(classification)가 있다
+
+==회귀== : 선형적으로 대충  때려 맞추기
+==분류== : 특징보고 좀 더 명확히 때려 맞추기
+
+### 회귀
+[[선형 회귀 분석]]
