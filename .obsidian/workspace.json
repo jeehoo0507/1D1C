@@ -1,0 +1,266 @@
+{
+  "main": {
+    "id": "893695f7c30b3571",
+    "type": "split",
+    "children": [
+      {
+        "id": "78305002fb819666",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "b5b94ecc2664a8e6",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "MLDL2/1. 선형 회귀 분석 - 이론.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "1. 선형 회귀 분석 - 이론"
+            }
+          },
+          {
+            "id": "4a6fd88672e24137",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "README.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "README"
+            }
+          },
+          {
+            "id": "3880db337c7385c6",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Latex/3. 기울기.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "3. 기울기"
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "3ace5379ae95e3dd",
+    "type": "split",
+    "children": [
+      {
+        "id": "c3cb6a472727bb6c",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "801a85c1d3c91a06",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "파일 탐색기"
+            }
+          },
+          {
+            "id": "f4c6f298b7acf9d1",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "검색"
+            }
+          },
+          {
+            "id": "18bdcdbdbc21257b",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "북마크"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "411f4983b7e235c8",
+    "type": "split",
+    "children": [
+      {
+        "id": "0cfbb9ed017e2a30",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "4ff3b2e26c252fbe",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Excalidraw/Drawing 2026-07-22 16.29.17.excalidraw.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Drawing 2026-07-22 16.29.17.excalidraw 의 백링크"
+            }
+          },
+          {
+            "id": "185e6c716d98dfcc",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Excalidraw/Drawing 2026-07-22 16.29.17.excalidraw.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Drawing 2026-07-22 16.29.17.excalidraw 의 나가는 링크"
+            }
+          },
+          {
+            "id": "0ef420ac569bcd7b",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "태그"
+            }
+          },
+          {
+            "id": "696046350c10879c",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "모든 속성"
+            }
+          },
+          {
+            "id": "8022cd640cd2e46b",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "README.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "README 의 개요"
+            }
+          }
+        ],
+        "currentTab": 4
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:빠른 전환기 열기": false,
+      "graph:그래프 뷰 열기": false,
+      "canvas:새 캔버스 만들기": false,
+      "daily-notes:오늘의 일일 노트 열기": false,
+      "templates:템플릿 삽입": false,
+      "command-palette:명령어 팔레트 열기": false,
+      "bases:새 베이스 생성하기": false,
+      "obsidian-excalidraw-plugin:New drawing": false,
+      "obsidian-git:Open Git source control": false
+    }
+  },
+  "active": "4a6fd88672e24137",
+  "lastOpenFiles": [
+    "img/Pasted image 20260727031456.png",
+    "Excalidraw/Drawing 2026-07-22 23.07.37.excalidraw.md",
+    "img/Pasted Image 20260727031313_571.png",
+    "img/Pasted Image 20260727031021_601.png",
+    "3. 릿지 라쏘 회귀 - 코드.md",
+    "MLDL2/3. 릿지 라쏘 회귀 - 이론.md",
+    "MLDL2/1. 선형 회귀 분석 - 코드.md",
+    "MLDL2/1. 선형 회귀 분석 - 이론.md",
+    "img/Pasted image 20260727030040.png",
+    "img/Pasted image 20260727030028.png",
+    "Excalidraw/각 분야 로드맵.md",
+    "MLDL2/2. 다중 선형 회귀 분석 - 코드.md",
+    "MLDL2/2. 다중 선형 회귀 분석 - 이론.md",
+    "Latex/3. 기울기.md",
+    "MLDL/Machine Learning(머신러닝)/1. Supervised Learning(지도 학습)/1. Linear Regression.md",
+    "Latex/2. 띄어쓰기.md",
+    "img/Pasted image 20260727015134.png",
+    "vibe rater/KS.md",
+    "img/Pasted image 20260726222301.png",
+    "img/Pasted image 20260726222255.png",
+    "img/Pasted image 20260726222241.png",
+    "img/Pasted image 20260726222236.png",
+    "img/Pasted image 20260726222212.png",
+    "vibe rater/0. cosmos/개인 위키 구상하기 - 이미지.md",
+    "vibe rater/0. cosmos/개인 위키 구상.md",
+    "vibe rater/0. cosmos",
+    "vibe rater",
+    "서버컴.md",
+    "자체 ai 벤치 마크 만들기.md",
+    "README.md",
+    "논문/참고.md",
+    "2. 다중 선형 회귀 분석 - 코드.md",
+    "Latex/차원 표현법.md",
+    "Latex/열벡터 표현법.md",
+    "Latex/행벡터 표현법.md",
+    "Latex/1. 벡터 표현법.md",
+    "pytorch/참고.md",
+    "논문/원문/09_양자화(quantization)/WKVQuant.pdf",
+    "논문/원문/09_양자화(quantization)/KIVI.pdf",
+    "논문/원문/09_양자화(quantization)/SpintQuant.pdf",
+    "논문/원문/09_양자화(quantization)/DuQuant.pdf",
+    "논문/원문/09_양자화(quantization)/KVQuant.pdf",
+    "논문/원문/09_양자화(quantization)/AWQ.pdf",
+    "논문/원문/09_양자화(quantization)/SmoothQuant.pdf",
+    "논문/원문/09_양자화(quantization)/SpQR.pdf",
+    "MLDL2/0. ML.md"
+  ]
+}
