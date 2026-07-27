@@ -22,31 +22,17 @@
             }
           },
           {
-            "id": "4a6fd88672e24137",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "README.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "README"
-            }
-          },
-          {
             "id": "3880db337c7385c6",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Latex/3. 기울기.md",
+                "file": "4. 로지스틱 회귀 - 이론.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "3. 기울기"
+              "title": "4. 로지스틱 회귀 - 이론"
             }
           }
         ],
@@ -185,13 +171,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "README.md",
+                "file": "4. 로지스틱 회귀 - 이론.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "README 의 개요"
+              "title": "4. 로지스틱 회귀 - 이론 의 개요"
             }
           }
         ],
@@ -210,27 +196,40 @@
       "templates:템플릿 삽입": false,
       "command-palette:명령어 팔레트 열기": false,
       "bases:새 베이스 생성하기": false,
-      "obsidian-excalidraw-plugin:New drawing": false,
-      "obsidian-git:Open Git source control": false
+      "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "4a6fd88672e24137",
+  "active": "3880db337c7385c6",
   "lastOpenFiles": [
-    "3. 릿지 라쏘 회귀 - 코드.md",
-    "README.md",
-    "img/Pasted image 20260727031456.png",
-    "Excalidraw/Drawing 2026-07-22 23.07.37.excalidraw.md",
-    "img/Pasted Image 20260727031313_571.png",
-    "img/Pasted Image 20260727031021_601.png",
+    "논문/원문/01_언어모델(NLP-LLM)/k3_tech_report.pdf",
+    "논문/원문/k3_tech_report.pdf",
+    "논문/k3_tech_report.pdf",
+    "k3_tech_report.pdf",
+    "민원 챗봇.md",
     "MLDL2/3. 릿지 라쏘 회귀 - 이론.md",
+    "MLDL2/3. 릿지 라쏘 회귀 - 코드.md",
+    "4..md",
+    "Excalidraw/각 분야 로드맵.md",
+    "Excalidraw/Drawing 2026-07-22 23.07.37.excalidraw.md",
+    "Excalidraw/zerotoML.md",
     "MLDL2/1. 선형 회귀 분석 - 코드.md",
     "MLDL2/1. 선형 회귀 분석 - 이론.md",
+    "README.md",
+    "자체 ai 벤치 마크 만들기.md",
+    "서버컴.md",
+    "4. 로지스틱 회귀 - 이론.md",
+    "MLDL2/0. ML.md",
+    "pytorch/참고.md",
+    "논문/참고.md",
+    "Latex/3. 기울기.md",
+    "논문/원문/08_아키텍처-효율화/one token is enough.pdf",
+    "img/Pasted image 20260727031456.png",
+    "img/Pasted Image 20260727031313_571.png",
+    "img/Pasted Image 20260727031021_601.png",
     "img/Pasted image 20260727030040.png",
     "img/Pasted image 20260727030028.png",
-    "Excalidraw/각 분야 로드맵.md",
     "MLDL2/2. 다중 선형 회귀 분석 - 코드.md",
     "MLDL2/2. 다중 선형 회귀 분석 - 이론.md",
-    "Latex/3. 기울기.md",
     "MLDL/Machine Learning(머신러닝)/1. Supervised Learning(지도 학습)/1. Linear Regression.md",
     "Latex/2. 띄어쓰기.md",
     "img/Pasted image 20260727015134.png",
@@ -243,23 +242,10 @@
     "vibe rater/0. cosmos/개인 위키 구상.md",
     "vibe rater/0. cosmos",
     "vibe rater",
-    "서버컴.md",
-    "자체 ai 벤치 마크 만들기.md",
-    "논문/참고.md",
     "2. 다중 선형 회귀 분석 - 코드.md",
-    "Latex/차원 표현법.md",
-    "Latex/열벡터 표현법.md",
-    "Latex/행벡터 표현법.md",
-    "Latex/1. 벡터 표현법.md",
-    "pytorch/참고.md",
     "논문/원문/09_양자화(quantization)/WKVQuant.pdf",
     "논문/원문/09_양자화(quantization)/KIVI.pdf",
     "논문/원문/09_양자화(quantization)/SpintQuant.pdf",
-    "논문/원문/09_양자화(quantization)/DuQuant.pdf",
-    "논문/원문/09_양자화(quantization)/KVQuant.pdf",
-    "논문/원문/09_양자화(quantization)/AWQ.pdf",
-    "논문/원문/09_양자화(quantization)/SmoothQuant.pdf",
-    "논문/원문/09_양자화(quantization)/SpQR.pdf",
-    "MLDL2/0. ML.md"
+    "논문/원문/09_양자화(quantization)/DuQuant.pdf"
   ]
 }
