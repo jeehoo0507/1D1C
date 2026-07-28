@@ -1,70 +1,41 @@
 {
   "main": {
-    "id": "893695f7c30b3571",
+    "id": "aad2112fbf7b36b4",
     "type": "split",
     "children": [
       {
-        "id": "78305002fb819666",
+        "id": "18face6202af7d42",
         "type": "tabs",
         "children": [
           {
-            "id": "b5b94ecc2664a8e6",
+            "id": "db6d57acec84b256",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "MLDL2/1. 선형 회귀 분석 - 이론.md",
+                "file": "Predicting Student Health Risk/진행.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "1. 선형 회귀 분석 - 이론"
-            }
-          },
-          {
-            "id": "3880db337c7385c6",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "민원 챗봇.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "민원 챗봇"
-            }
-          },
-          {
-            "id": "4401307df2817940",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "README.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "README"
+              "title": "진행"
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
   },
   "left": {
-    "id": "3ace5379ae95e3dd",
+    "id": "24416fe9bd1e0199",
     "type": "split",
     "children": [
       {
-        "id": "c3cb6a472727bb6c",
+        "id": "e40e39c4fe7e1277",
         "type": "tabs",
         "children": [
           {
-            "id": "801a85c1d3c91a06",
+            "id": "d7a63aebf48b8b5a",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -77,7 +48,7 @@
             }
           },
           {
-            "id": "f4c6f298b7acf9d1",
+            "id": "c0f161bac14bff4e",
             "type": "leaf",
             "state": {
               "type": "search",
@@ -94,7 +65,7 @@
             }
           },
           {
-            "id": "18bdcdbdbc21257b",
+            "id": "6d70d28e4485e60c",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
@@ -110,20 +81,20 @@
     "width": 300
   },
   "right": {
-    "id": "411f4983b7e235c8",
+    "id": "e3cd1ed8ecfe5bf4",
     "type": "split",
     "children": [
       {
-        "id": "0cfbb9ed017e2a30",
+        "id": "1c7bc06a5890c3c5",
         "type": "tabs",
         "children": [
           {
-            "id": "4ff3b2e26c252fbe",
+            "id": "5c019161bcbc7b13",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Excalidraw/Drawing 2026-07-22 16.29.17.excalidraw.md",
+                "file": "Predicting Student Health Risk/진행.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -133,25 +104,25 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Drawing 2026-07-22 16.29.17.excalidraw 의 백링크"
+              "title": "진행 의 백링크"
             }
           },
           {
-            "id": "185e6c716d98dfcc",
+            "id": "b3546e8fb3ad1054",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Excalidraw/Drawing 2026-07-22 16.29.17.excalidraw.md",
+                "file": "Predicting Student Health Risk/진행.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Drawing 2026-07-22 16.29.17.excalidraw 의 나가는 링크"
+              "title": "진행 의 나가는 링크"
             }
           },
           {
-            "id": "0ef420ac569bcd7b",
+            "id": "334f6e31b2d4c7ba",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -166,7 +137,7 @@
             }
           },
           {
-            "id": "696046350c10879c",
+            "id": "1d268a43a27cc877",
             "type": "leaf",
             "state": {
               "type": "all-properties",
@@ -180,26 +151,26 @@
             }
           },
           {
-            "id": "8022cd640cd2e46b",
+            "id": "1a0fb598cb7459c9",
             "type": "leaf",
             "state": {
               "type": "outline",
               "state": {
-                "file": "README.md",
+                "file": "Predicting Student Health Risk/진행.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "README 의 개요"
+              "title": "진행 의 개요"
             }
           }
-        ],
-        "currentTab": 4
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -209,56 +180,14 @@
       "daily-notes:오늘의 일일 노트 열기": false,
       "templates:템플릿 삽입": false,
       "command-palette:명령어 팔레트 열기": false,
-      "bases:새 베이스 생성하기": false,
-      "obsidian-excalidraw-plugin:New drawing": false
+      "bases:새 베이스 생성하기": false
     }
   },
-  "active": "4401307df2817940",
+  "active": "d7a63aebf48b8b5a",
   "lastOpenFiles": [
-    "4. 로지스틱 회귀 - 이론.md",
-    "kagglegoat",
-    "G/Predicting Student Health Risk/Predicting Student Health Risk.md",
-    "G/Predicting Student Health Risk/진행.md",
-    "G/진행.md",
-    "G/무제.md",
-    "G/Pasted image 20260729004957.png",
-    "G/Pasted image 20260729004904.png",
-    "G/Predicting Student Health Risk.md",
-    "G/Predicting Student Health Risk",
-    "4. 로지스틱 회귀 - 코드.md",
-    "ㅁ.md",
-    "민원 챗봇.md",
-    "서버컴.md",
-    "자체 ai 벤치 마크 만들기.md",
-    "README.md",
-    "Excalidraw/Drawing 2026-07-22 23.07.37.excalidraw.md",
-    "Excalidraw/데이터구조.png",
-    "Excalidraw/Drawing 2026-07-28 22.39.53.excalidraw.md",
-    "컨트롤.md",
-    "Excalidraw/Drawing 2026-07-28 22.39.53.excalidraw.png",
-    "img/Pasted Image 20260728232414_577.png",
-    "img/Pasted Image 20260728232229_538.png",
-    "Excalidraw/각 분야 로드맵.md",
-    "Excalidraw/zerotoML.md",
-    "img/Pasted Image 20260728232042_317.png",
-    "img/Pasted Image 20260728231129_761.png",
-    "img/Pasted Image 20260728231004_931.png",
-    "img/Pasted Image 20260728230719_306.png",
-    "Git/4, github 연결.md",
-    "Git/5. pull request.md",
-    "Git/6. 특정 파일 감지 X.md",
-    "논문/원문/01_언어모델(NLP-LLM)/k3_tech_report.pdf",
-    "논문/원문/k3_tech_report.pdf",
-    "논문/k3_tech_report.pdf",
-    "k3_tech_report.pdf",
-    "MLDL2/3. 릿지 라쏘 회귀 - 이론.md",
-    "MLDL2/3. 릿지 라쏘 회귀 - 코드.md",
-    "MLDL2/1. 선형 회귀 분석 - 코드.md",
-    "MLDL2/1. 선형 회귀 분석 - 이론.md",
-    "MLDL2/0. ML.md",
-    "논문/원문/08_아키텍처-효율화/one token is enough.pdf",
-    "vibe rater/0. cosmos",
-    "vibe rater",
-    "논문/원문/09_양자화(quantization)/WKVQuant.pdf"
+    "Predicting Student Health Risk/Predicting Student Health Risk.md",
+    "Predicting Student Health Risk/진행.md",
+    "Pasted image 20260729004957.png",
+    "Pasted image 20260729004904.png"
   ]
 }
