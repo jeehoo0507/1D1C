@@ -39,12 +39,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "README.md",
+                "file": "인공지능은 미해결 난제를 어떻게 해결하는가?.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "README"
+              "title": "인공지능은 미해결 난제를 어떻게 해결하는가?"
             }
           },
           {
@@ -199,7 +199,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "README.md",
+                "file": "인공지능은 미해결 난제를 어떻게 해결하는가?.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -227,8 +227,12 @@
       "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "a81192c980b55115",
+  "active": "801a85c1d3c91a06",
   "lastOpenFiles": [
+    "이슈",
+    "img/Pasted image 20260803023412.png",
+    "README.md",
+    "인공지능은 미해결 난제를 어떻게 해결하는가?.md",
     "MLDL2/4. 로지스틱 회귀 - 코드.md",
     "MLDL2/4. 로지스틱 회귀 - 이론.md",
     "MLDL2/3. 릿지 라쏘 회귀 - 코드.md",
@@ -237,7 +241,6 @@
     "MLDL2/2. 다중 선형 회귀 분석 - 이론.md",
     "MLDL2/1. 선형 회귀 분석 - 코드.md",
     "MLDL2/1. 선형 회귀 분석 - 이론.md",
-    "README.md",
     "Excalidraw/신경망 구축.md",
     "Latex/열벡터 표현법.md",
     "Latex/1. 벡터 표현법.md",
@@ -265,14 +268,11 @@
     "컨트롤.md",
     "ㅁ.md",
     "G/정석 렌더링.md",
-    "무제.md",
     "논문/원문/02_비전(Vision)/unlimited ocr.pdf",
     "K/K.md",
     "K/무제.md",
     "K",
-    "G/Predicting Student Health Risk/Predicting Student Health Risk.md",
     "G/Pasted image 20260729004957.png",
-    "G/Pasted image 20260729004904.png",
     "G/Predicting Student Health Risk",
     "논문/원문/01_언어모델(NLP-LLM)/k3_tech_report.pdf",
     "논문/원문/k3_tech_report.pdf"
