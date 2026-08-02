@@ -39,12 +39,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "MLDL2/4. 로지스틱 회귀 - 코드.md",
+                "file": "README.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "4. 로지스틱 회귀 - 코드"
+              "title": "README"
             }
           },
           {
@@ -199,7 +199,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "MLDL2/4. 로지스틱 회귀 - 코드.md",
+                "file": "README.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -229,12 +229,15 @@
   },
   "active": "a81192c980b55115",
   "lastOpenFiles": [
-    "MLDL2/2. 다중 선형 회귀 분석 - 코드.md",
-    "MLDL2/3. 릿지 라쏘 회귀 - 이론.md",
-    "MLDL2/4. 로지스틱 회귀 - 이론.md",
     "MLDL2/4. 로지스틱 회귀 - 코드.md",
+    "MLDL2/4. 로지스틱 회귀 - 이론.md",
+    "MLDL2/3. 릿지 라쏘 회귀 - 코드.md",
+    "MLDL2/3. 릿지 라쏘 회귀 - 이론.md",
+    "MLDL2/2. 다중 선형 회귀 분석 - 코드.md",
+    "MLDL2/2. 다중 선형 회귀 분석 - 이론.md",
     "MLDL2/1. 선형 회귀 분석 - 코드.md",
     "MLDL2/1. 선형 회귀 분석 - 이론.md",
+    "README.md",
     "Excalidraw/신경망 구축.md",
     "Latex/열벡터 표현법.md",
     "Latex/1. 벡터 표현법.md",
@@ -246,13 +249,10 @@
     "MLDL2/pdf/4. 로지스틱 회귀 - 이론.pdf",
     "MLDL2/4. 로지스틱 회귀 - 이론.pdf",
     "4. 로지스틱 회귀 - 이론.pdf",
-    "MLDL2/3. 릿지 라쏘 회귀 - 코드.md",
     "img/Pasted image 20260801110307.png",
     "Excalidraw/zerotoML.md",
-    "MLDL2/2. 다중 선형 회귀 분석 - 이론.md",
     "img/Pasted image 20260801104857.png",
     "Excalidraw/데이터구조.png",
-    "README.md",
     "MLDL2/0. ML.md",
     "img/Pasted image 20260801013507.png",
     "img/Pasted image 20260801013410.png",
