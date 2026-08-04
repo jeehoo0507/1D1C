@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ps/제 1회 티라노컵/B. 시간표 1.md",
+                "file": "lean/NNG LINK.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "B. 시간표 1"
+              "title": "NNG LINK"
             }
           },
           {
@@ -27,15 +27,16 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "MLDL2/1. 선형 회귀 분석 - 코드.md",
+                "file": "인공지능은 미해결 난제를 어떻게 해결하는가?.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "1. 선형 회귀 분석 - 코드"
+              "title": "인공지능은 미해결 난제를 어떻게 해결하는가?"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -172,7 +173,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "ps/제 1회 티라노컵/B. 시간표 1.md",
+                "file": "인공지능은 미해결 난제를 어떻게 해결하는가?.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -186,8 +187,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -201,12 +201,28 @@
       "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "b5b94ecc2664a8e6",
+  "active": "5616881823edab14",
   "lastOpenFiles": [
+    "img/Pasted image 20260804180902.png",
+    "Deepseek prover 2.md",
+    "lean/Lean tutorial.md",
+    "인공지능은 미해결 난제를 어떻게 해결하는가?.md",
+    "img/Pasted image 20260804173246.png",
+    "img/Pasted image 20260804173238.png",
+    "img/Pasted image 20260804173201.png",
+    "img/Pasted image 20260804172741.png",
+    "img/Pasted image 20260804172736.png",
+    "lean/NNG LINK.md",
+    "img/Pasted image 20260804172639.png",
+    "MLDL2/1. 선형 회귀 분석 - 코드.md",
+    "img/Pasted image 20260804170859.png",
+    "img/Pasted image 20260804170842.png",
+    "img/Pasted image 20260804170840.png",
+    "lean",
+    "ps/제 1회 티라노컵/B. 시간표 1.md",
     "ps/제 1회 티라노컵/티라노컵 후기.md",
     "vibe rater/개인위키2/레퍼런스.md",
     "vibe rater/개인위키2",
-    "인공지능은 미해결 난제를 어떻게 해결하는가?.md",
     "논문/원문/08_아키텍처-효율화/deepseek-prover-v2.pdf",
     "논문/원문/08_아키텍처-효율화/2504.21801v2.pdf",
     "논문/원문/08_아키텍처-효율화/미확인 190328.crdownload",
@@ -227,28 +243,12 @@
     "Excalidraw/Drawing 2026-07-22 23.07.37.excalidraw.md",
     "Excalidraw/zerotoML.md",
     "MLDL2/2. 다중 선형 회귀 분석 - 이론.md",
-    "MLDL2/1. 선형 회귀 분석 - 코드.md",
     "img/Pasted image 20260803234554.png",
-    "야코비안 행렬.md",
     "이슈",
-    "img/Pasted image 20260803023412.png",
-    "Excalidraw/신경망 구축.md",
-    "Latex/열벡터 표현법.md",
-    "Latex/1. 벡터 표현법.md",
-    "Excalidraw/민원 챗봇.md",
-    "img/Pasted image 20260802021944.png",
     "MLDL2/pdf/야코비안 행렬.pdf",
     "MLDL2/pdf/4. 로지스틱 회귀 - 이론.pdf",
     "MLDL2/4. 로지스틱 회귀 - 이론.pdf",
     "4. 로지스틱 회귀 - 이론.pdf",
-    "img/Pasted image 20260801110307.png",
-    "img/Pasted image 20260801104857.png",
-    "Excalidraw/데이터구조.png",
-    "img/Pasted image 20260801013507.png",
-    "img/Pasted image 20260801013410.png",
-    "img/Pasted image 20260801013307.png",
-    "무제.canvas",
-    "img/Pasted image 20260801004331.png",
-    "대기열"
+    "무제.canvas"
   ]
 }
