@@ -1,6 +1,5 @@
 {
   "theme": "obsidian",
-  "nativeMenus": false,
   "cssTheme": "Minimal",
-  "accentColor": "#e3e3e3"
+  "accentColor": "#ffffff"
 }
