@@ -41,12 +41,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Deepseek math v2 번역.md",
+                "file": "README.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Deepseek math v2 번역"
+              "title": "README"
             }
           }
         ],
@@ -187,7 +187,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Deepseek math v2 번역.md",
+                "file": "README.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -217,12 +217,12 @@
   },
   "active": "a76ed00ba8baec14",
   "lastOpenFiles": [
-    "zero to ml/zero to ml.md",
     "Deepseek math v2 번역.md",
+    "README.md",
+    "Deepseek math v2 리뷰.md",
+    "zero to ml/zero to ml.md",
     "zero to ml",
     "zero to ml/zero to ml.pdf",
-    "Deepseek math v2 리뷰.md",
-    "README.md",
     "논문/원문/07_강화학습(RL)/deepseekMathV2.pdf",
     "논문/원문/07_강화학습(RL)/미확인 511383.crdownload",
     "논문/원문/05_DLLM(Diffusion-LM)/diffusiongemma.pdf",

@@ -1,5 +1,8 @@
 {
   "theme": "obsidian",
   "cssTheme": "Minimal",
-  "accentColor": "#ffffff"
+  "accentColor": "#ffffff",
+  "enabledCssSnippets": [
+    "heading-size"
+  ]
 }
