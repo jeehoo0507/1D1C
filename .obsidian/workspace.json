@@ -41,12 +41,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "README.md",
+                "file": "Deepseek math v2 리뷰.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "README"
+              "title": "Deepseek math v2 리뷰"
             }
           }
         ],
@@ -187,7 +187,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "README.md",
+                "file": "Deepseek math v2 리뷰.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -218,8 +218,8 @@
   "active": "a76ed00ba8baec14",
   "lastOpenFiles": [
     "Deepseek math v2 번역.md",
-    "README.md",
     "Deepseek math v2 리뷰.md",
+    "README.md",
     "zero to ml/zero to ml.md",
     "zero to ml",
     "zero to ml/zero to ml.pdf",
