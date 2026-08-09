@@ -41,12 +41,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "인공지능은 미해결 난제를 어떻게 해결하는가?.md",
+                "file": "Deepseek math v2 리뷰.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "인공지능은 미해결 난제를 어떻게 해결하는가?"
+              "title": "Deepseek math v2 리뷰"
             }
           }
         ],
@@ -187,7 +187,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "인공지능은 미해결 난제를 어떻게 해결하는가?.md",
+                "file": "Deepseek math v2 리뷰.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -217,15 +217,16 @@
   },
   "active": "a76ed00ba8baec14",
   "lastOpenFiles": [
-    "인공지능은 미해결 난제를 어떻게 해결하는가?.pdf",
-    "논문/참고.md",
-    "Deepseek math v2 리뷰.md",
-    "논문/원문/05_DLLM(Diffusion-LM)/Guided Star.pdf",
-    "인공지능은 미해결 난제를 어떻게 해결하는가?.md",
+    "Deepseek math v2 리뷰.pdf",
     "Deepseek math v2 번역.md",
+    "인공지능은 미해결 난제를 어떻게 해결하는가?.md",
+    "Deepseek math v2 리뷰.md",
+    "인공지능은 미해결 난제를 어떻게 해결하는가?.pdf",
+    "README.md",
+    "논문/참고.md",
+    "논문/원문/05_DLLM(Diffusion-LM)/Guided Star.pdf",
     "논문/원문/01_언어모델(NLP-LLM)/kimi k3.pdf",
     "논문/원문/05_DLLM(Diffusion-LM)/justGRPO.pdf",
-    "README.md",
     "zero to ml/zero to ml.md",
     "zero to ml",
     "zero to ml/zero to ml.pdf",
@@ -233,7 +234,6 @@
     "논문/원문/07_강화학습(RL)/미확인 511383.crdownload",
     "논문/원문/05_DLLM(Diffusion-LM)/diffusiongemma.pdf",
     "논문/원문/05_DLLM(Diffusion-LM)/2608.00146v1.pdf",
-    "논문/원문/05_DLLM(Diffusion-LM)/미확인 256370.crdownload",
     "MLDL2/1. 선형 회귀 분석 - 코드.md",
     "MLDL2/1. 선형 회귀 분석 - 이론.md",
     "경험.md",

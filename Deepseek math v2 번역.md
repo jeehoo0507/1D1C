@@ -125,3 +125,139 @@ DeepSeek-V3.2-Exp-Base (DeepSeek-AI, 2025)를 기반으로, 우리는 자기 검
 Putnam 2024 학부 대회에서는 120점 만점에 118점을 기록하여, 인간 참가자가 얻은 최고 점수인 90점을 넘어섰다.
 
 ###### On the Putnam 2024 undergraduate competition, it scored 118/120, exceeding the highest score of 90 obtained by human participants.
+
+
+
+
+## Method
+
+### 2.1. 증명 검증 (Proof Verification)
+
+#### 2.1.1. 문제점을 식별하고 증명을 채점하는 검증기 훈련 (Training a Verifier to Identify Issues and Score Proofs)
+
+우리는 수학 전문가의 평가 과정을 본떠, 검증기가 이 루브릭에 따라 증명을 평가하도록 훈련하는 것을 목표로 증명 평가용 고수준 루브릭 I_v를 개발했다 (부록 A.2 참조).
+
+###### We developed high-level rubrics I𝑣 for proof evaluation (see Appendix A.2) with the goal of training a verifier to evaluate proofs according to these rubrics, mirroring mathematical experts' assessment process.
+
+구체적으로, 문제 X와 증명 Y가 주어졌을 때 검증기 π_φ(·|X, Y, I_v)는 먼저 식별된 문제점(있다면)을 요약하고 이어서 세 단계 중 하나로 점수를 부여하는 증명 분석을 생성하도록 설계되었다: 모든 논리 단계가 명확히 정당화된 완전하고 엄밀한 증명은 1점, 전체 논리는 타당하나 사소한 오류나 세부 생략이 있는 증명은 0.5점, 치명적 논리 오류나 결정적 공백을 포함한 근본적으로 결함 있는 증명은 0점이다.
+
+###### Specifically, given a problem 𝑋 and a proof 𝑌, the verifier 𝜋𝜑(·|𝑋, 𝑌, I𝑣) is designed to produce a proof analysis that first summarizes identified issues (if any) and then assigns a score based on three levels: 1 for complete and rigorous proofs with all logical steps clearly justified; 0.5 for proofs with sound overall logic but minor errors or omitted details; and 0 for fundamentally flawed proofs containing fatal logical errors or critical gaps.
+
+---
+
+**콜드 스타트 RL 데이터 구축 (Curating Cold Start RL Data)**
+
+우리는 다음 과정을 통해 초기 훈련 데이터를 구성했다:
+
+###### We constructed our initial training data through the following process:
+
+1. 우리는 Art of Problem Solving(AoPS) 대회 문제들을 크롤링했으며, 수학 올림피아드·대표 선발전·증명을 명시적으로 요구하는 2010년 이후 문제를 우선시하여 총 17,503개 문제를 수집했다. 이 문제 집합을 D_p로 표기한다.
+
+###### 1. We crawled problems from Art of Problem Solving (AoPS) contests, prioritizing math olympiads, team selection tests, and post-2010 problems explicitly requiring proofs, totaling 17,503 problems. This problem set is denoted as D𝑝.
+
+2. 우리는 DeepSeek-V3.2-Exp-Thinking의 변형 모델을 사용해 후보 증명을 생성했다. 이 모델은 정리 증명에 최적화되어 있지 않아 간결하지만 오류가 많은 출력을 내는 경향이 있었으므로, 포괄성과 엄밀성을 높이기 위해 여러 라운드에 걸쳐 증명을 반복적으로 정제하도록 프롬프팅했다.
+
+###### 2. We generated candidate proofs using a variant of DeepSeek-V3.2-Exp-Thinking. As this model was not optimized for theorem proving and tended to produce concise but error-prone outputs, we prompted it to iteratively refine its proofs over multiple rounds to improve comprehensiveness and rigor.
+
+3. 우리는 다양한 문제 유형(예: 대수, 정수론)에 걸쳐 증명을 무작위로 표집하고, 수학 전문가들이 위에서 설명한 평가 루브릭에 따라 각 증명을 채점하도록 했다.
+
+###### 3. We randomly sampled proofs across diverse problem types (e.g., algebra and number theory) and had mathematical experts score each proof according to the evaluation rubrics described above.
+
+이 과정을 통해 초기 RL 데이터셋 D_v = {(X_i, Y_i, s_i)}가 만들어졌으며, 각 항목은 문제 X_i, 증명 Y_i, 그리고 전체 증명 점수 s_i ∈ {0, 0.5, 1}로 구성된다.
+
+###### This process yielded an initial RL dataset D𝑣 = {(𝑋𝑖, 𝑌𝑖, 𝑠𝑖)}, where each item consists of a problem 𝑋𝑖, a proof 𝑌𝑖, and an overall proof score 𝑠𝑖 ∈ {0, 0.5, 1}.
+
+---
+
+**RL 목적함수 (RL Objective)**
+
+수학 및 코드 관련 추론 데이터로 지도 미세조정된 DeepSeek-V3.2-Exp-SFT 버전을 기반으로, 우리는 두 가지 보상 요소를 사용해 강화학습으로 모델이 증명 분석을 생성하도록 훈련했다:
+
+###### Building on a version of DeepSeek-V3.2-Exp-SFT which was supervised finetuned on reasoning data related to mathematics and code, we trained the model with reinforcement learning to produce proof analyses using two reward components:
+
+• **형식 보상 R_format**: 모델이 식별된 문제점의 요약과 증명 점수를 모두 생성하도록 강제하는 지시 함수로, 최종 응답에 "Here is my evaluation of the solution:"이라는 핵심 문구와, "Based on my evaluation, the final overall score should be:" 뒤에 \boxed{} 안의 점수가 포함되어 있는지를 확인한다.
+
+###### • Format reward 𝑅format: An indicator function that enforces the model to generate both a summary of identified issues and a proof score, by checking whether the final response contains the key phrase "Here is my evaluation of the solution:" as well as a score within \boxed{} following "Based on my evaluation, the final overall score should be:".
+
+• **점수 보상 R_score**: 예측된 점수 s'_i와 주석된 점수 s_i 사이의 근접도에 기반한 보상:
+
+###### • Score reward 𝑅score: Rewards based on proximity between predicted score 𝑠′𝑖 and annotated score 𝑠𝑖:
+
+$$R_{score}(s'_i, s_i) = 1 - |s'_i - s_i| \tag{1}$$
+
+검증기 훈련을 위한 RL 목적함수는 다음과 같다:
+
+###### The RL objective for training the verifier is:
+
+$$\max_{\pi_\varphi} \mathbb{E}_{(X_i,Y_i,s_i)\sim D_v,\ (V'_i,s'_i)\sim\pi_\varphi(\cdot|X_i,Y_i)}\left[R_{format}(V'_i) \cdot R_{score}(s'_i, s_i)\right] \tag{2}$$
+
+여기서 V'_i는 검증기의 최종 응답을 나타내고, s'_i는 거기서 추출된 증명 점수다.
+
+###### where 𝑉′𝑖 denotes the verifier's final response and 𝑠′𝑖 is the proof score extracted from it.
+
+---
+
+### 2.1.2. 증명 분석을 검토하기 위한 메타 검증 도입 (Introducing Meta-Verification to Review Proof Analyses)
+
+2.1.1절에서 설명한 접근법은 예측된 증명 점수를 전문가 주석에 맞추도록 RL로 증명 검증을 훈련하지만, 식별된 문제점 자체에 대해서는 직접적인 지도(supervision)를 제공하지 않는다.
+
+###### The approach described in Section 2.1.1 trains proof verification through RL to align predicted proof scores with expert annotations, but provides no direct supervision on the identified issues themselves.
+
+이는 치명적인 취약점을 만든다: 훈련 중 결함 있는 증명(s_i < 1)을 평가할 때, 검증기는 존재하지 않는 문제점을 지어내면서도 정확한 점수를 예측함으로써 온전한 보상을 받을 수 있으며, 이는 검증기의 신뢰성을 훼손한다.
+
+###### This creates a critical vulnerability: when evaluating flawed proofs (where 𝑠𝑖 < 1) during training, the verifier can receive full reward by predicting the correct scores while hallucinating non-existent issues, undermining its trustworthiness.
+
+이 문제를 해결하기 위해 우리는 메타 검증을 도입한다: 검증기가 식별한 문제점이 실제로 존재하는지, 그리고 그 문제점들이 평가 루브릭 I_v에 따라 예측된 증명 점수를 논리적으로 정당화하는지를 평가하는 2차 평가 과정이다.
+
+###### To address this problem, we introduce meta-verification: a secondary evaluation process that assesses whether issues identified by the verifier indeed exist and whether these issues logically justify the predicted proof score according to the evaluation rubrics I𝑣.
+
+완전한 메타 검증 루브릭 I_mv는 부록 A.3에 상세히 기술되어 있다.
+
+###### The complete meta-verification rubrics I𝑚𝑣 are detailed in Appendix A.3.
+
+우리는 이 평가를 수행할 전용 메타 검증기를 RL로 훈련했다. 메타 검증기의 피드백을 검증기 훈련에 통합함으로써, 검증기가 문제점을 식별할 때의 충실성(faithfulness)을 개선할 수 있다.
+
+###### We trained a dedicated meta-verifier using RL to perform this evaluation. By incorporating the meta-verifier's feedback into verifier training, we can improve the faithfulness of the verifier's issue identification.
+
+---
+
+**메타 검증기 훈련 과정 (Meta-Verifier Training Process)**
+
+1. 우리는 2.1.1절에 따라 초기 검증기 π_φ를 얻었다.
+
+###### 1. We obtained an initial verifier 𝜋𝜑 following Section 2.1.1.
+
+2. 수학 전문가들이 I_mv에 따라 검증기 응답의 품질을 채점하여 데이터셋 D_mv = {(X_i, Y_i, V_i, ms_i)}를 만들었다. 여기서 V_i는 증명 Y_i에 대한 분석이고, ms_i ∈ {0, 0.5, 1}은 전문가가 주석한 품질 점수다.
+
+###### 2. Mathematical experts scored the quality of verifier responses according to I𝑚𝑣, creating dataset D𝑚𝑣 = {(𝑋𝑖, 𝑌𝑖,𝑉𝑖, 𝑚𝑠𝑖)}, where 𝑉𝑖 is the analysis of proof 𝑌𝑖 and 𝑚𝑠𝑖 ∈ {0, 0.5, 1} is the expert-annotated quality score.
+
+3. 우리는 검증기의 증명 분석 V를 분석하도록 메타 검증기 π_η(·|X, Y, V, I_mv)를 훈련했다. 메타 검증기는 분석 자체에서 발견된 문제점의 요약을 생성하고, 이어서 검증기의 분석이 얼마나 정확하고 정당한지를 측정하는 품질 점수를 부여한다. RL 목적함수는 형식 보상과 점수 보상을 사용하는, 검증기 훈련과 동일한 구조를 따른다.
+
+###### 3. We trained a meta-verifier 𝜋𝜂(·|𝑋, 𝑌, 𝑉, I𝑚𝑣) to analyze the verifier's proof analysis 𝑉. The meta-verifier produces a summary of issues found in the analysis itself, followed by a quality score measuring how accurate and justified the verifier's analysis is. The RL objective follows the same structure as the verifier training, with format and score rewards.
+
+---
+
+훈련된 메타 검증기 π_η를 사용하여, 우리는 메타 검증 피드백을 보상 함수에 통합함으로써 검증기 훈련을 강화했다:
+
+###### Using the trained meta-verifier 𝜋𝜂, we enhanced the verifier training by integrating meta-verification feedback into the reward function:
+
+$$R_V = R_{format} \cdot R_{score} \cdot R_{meta} \tag{3}$$
+
+여기서 R_meta는 메타 검증기가 부여한 품질 점수다.
+
+###### where 𝑅meta is the quality score from the meta-verifier.
+
+우리는 강화된 검증기를 검증 데이터셋 D_v와 메타 검증 데이터셋 D_mv 양쪽 모두로 훈련했으며, D_mv에는 메타 검증기 훈련에 사용한 것과 동일한 보상 메커니즘을 적용했다.
+
+###### We trained the enhanced verifier on both the verification dataset D𝑣 and the meta-verification dataset D𝑚𝑣, using the same reward mechanism on D𝑚𝑣 as used for training the meta-verifier.
+
+그 결과 모델은 증명 검증과 메타 검증 과제를 모두 수행할 수 있다.
+
+###### The resulting model can perform both proof verification and meta-verification tasks.
+
+D_v의 검증 분할에서, 메타 검증기가 평가한 검증기 증명 분석의 평균 품질 점수는 0.85에서 0.96으로 향상되었으며, 증명 점수 예측 정확도는 동일하게 유지되었다.
+
+###### On a validation split of D𝑣, the average quality score of the verifier's proof analyses – as evaluated by the meta-verifier – improved from 0.85 to 0.96, while maintaining the same accuracy in proof score prediction.
+
+---
+
