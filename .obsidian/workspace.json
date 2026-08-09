@@ -41,12 +41,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Deepseek math v2 리뷰.md",
+                "file": "인공지능은 미해결 난제를 어떻게 해결하는가?.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Deepseek math v2 리뷰"
+              "title": "인공지능은 미해결 난제를 어떻게 해결하는가?"
             }
           }
         ],
@@ -187,7 +187,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Deepseek math v2 리뷰.md",
+                "file": "인공지능은 미해결 난제를 어떻게 해결하는가?.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -217,8 +217,14 @@
   },
   "active": "a76ed00ba8baec14",
   "lastOpenFiles": [
-    "Deepseek math v2 번역.md",
+    "인공지능은 미해결 난제를 어떻게 해결하는가?.pdf",
+    "논문/참고.md",
     "Deepseek math v2 리뷰.md",
+    "논문/원문/05_DLLM(Diffusion-LM)/Guided Star.pdf",
+    "인공지능은 미해결 난제를 어떻게 해결하는가?.md",
+    "Deepseek math v2 번역.md",
+    "논문/원문/01_언어모델(NLP-LLM)/kimi k3.pdf",
+    "논문/원문/05_DLLM(Diffusion-LM)/justGRPO.pdf",
     "README.md",
     "zero to ml/zero to ml.md",
     "zero to ml",
@@ -231,7 +237,6 @@
     "MLDL2/1. 선형 회귀 분석 - 코드.md",
     "MLDL2/1. 선형 회귀 분석 - 이론.md",
     "경험.md",
-    "인공지능은 미해결 난제를 어떻게 해결하는가?.md",
     "소프트 맥스 참고 자료.md",
     "vibe rater/0. cosmos/개인 위키 구상하기 - 이미지.md",
     "ps/jungol/포크.md",
@@ -244,16 +249,12 @@
     "Latex/3. 기울기.md",
     "Latex/2. 띄어쓰기.md",
     "Latex/1. 벡터 표현법.md",
-    "인공지능은 미해결 난제를 어떻게 해결하는가?.pdf",
     "딥러닝 수식 가이드.md",
-    "논문/원문/07_강화학습(RL)/deepseek-prover-v2.pdf",
-    "논문/원문/deepseek-prover-v2.pdf",
     "MLDL2/5. 소프트 맥스 회귀 - 이론.md",
     "MLDL2/5. 소프트 맥스 회귀 - 코드.md",
     "MLDL2/0. ML.md",
     "MLDL2/0. 야코비안 행렬.md",
     "img/Pasted image 20260804180902.png",
-    "lean/Lean tutorial.md",
     "img/Pasted image 20260804173246.png",
     "img/Pasted image 20260804173238.png",
     "img/Pasted image 20260804173201.png",
