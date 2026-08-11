@@ -25,4 +25,6 @@
 8월 6일 - zero to ml 초안, 딥시크 math v2 abstract && 전체 파이프 라인 요약
 8월 7일 - zero to ml 선형 회귀 분석
 8월 8일 - deepseek math v2 소개 요약 && 초록 수정
-8월 9일 - 
+8월 9일 - zero to ml 만들기
+8월 11일 - deepseek math v2 메소드 초반부 정리
+8월 12일 - 딥러닝 수식 가이드 작성
