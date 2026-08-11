@@ -203,7 +203,11 @@ $$\max_{\pi_\varphi} \mathbb{E}_{(X_i,Y_i,s_i)\sim D_v,\ (V'_i,s'_i)\sim\pi_\var
 
 ###### The approach described in Section 2.1.1 trains proof verification through RL to align predicted proof scores with expert annotations, but provides no direct supervision on the identified issues themselves.
 
+<<<<<<< HEAD
 이는 치명적인 취약점을 만든다: 훈련 중 결함 있는 증명(s_i < 1)을 평가할 때, 검증기는 존재하지 않는 문제점을 지어내면서도 정확한 점수를 예측함으로써 온전한 보상을 받 ㅡ,,,,,,,,,,,,,---------------을 수 있으며, 이는 검증기의 신뢰성을 훼손한다.
+=======
+이는 치명적인 취약점을 만든다: 훈련 중 결함 있는 증명(s_i < 1)을 평가할 때, 검증기는 존재하지 않는 문제점을 지어내면서도 정확한 점수를 예측함으로써 온전한 보상을 받을 수 있으며, 이는 검증기의 신뢰성을 훼손한다.
+>>>>>>> 2b107de7f97b70b26578202730c5a7fcb0759d17
 
 ###### This creates a critical vulnerability: when evaluating flawed proofs (where 𝑠𝑖 < 1) during training, the verifier can receive full reward by predicting the correct scores while hallucinating non-existent issues, undermining its trustworthiness.
 
