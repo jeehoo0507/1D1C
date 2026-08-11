@@ -1,70 +1,55 @@
 {
   "main": {
-    "id": "893695f7c30b3571",
+    "id": "937d89d40d2df4cd",
     "type": "split",
     "children": [
       {
-        "id": "78305002fb819666",
+        "id": "bcf459145316ea5f",
         "type": "tabs",
         "children": [
           {
-            "id": "b5b94ecc2664a8e6",
+            "id": "655c69ea9c8b7b81",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "lean/NNG LINK.md",
+                "file": "딥러닝 수식 가이드.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "NNG LINK"
+              "title": "딥러닝 수식 가이드"
             }
           },
           {
-            "id": "5616881823edab14",
+            "id": "f2e6bc3757d53ce6",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "MLDL/Linear Algebra(선형대수학)/10. rank.md",
+                "file": "Deepseek math v2 번역.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "10. rank"
-            }
-          },
-          {
-            "id": "a76ed00ba8baec14",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "진로 인터뷰.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "진로 인터뷰"
+              "title": "Deepseek math v2 번역"
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
   },
   "left": {
-    "id": "3ace5379ae95e3dd",
+    "id": "70a85871f1ce871d",
     "type": "split",
     "children": [
       {
-        "id": "c3cb6a472727bb6c",
+        "id": "48c3021e4cb6aad3",
         "type": "tabs",
         "children": [
           {
-            "id": "801a85c1d3c91a06",
+            "id": "4eb5e502d770b870",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -79,7 +64,7 @@
             }
           },
           {
-            "id": "f4c6f298b7acf9d1",
+            "id": "8f572a2310fb3a8f",
             "type": "leaf",
             "state": {
               "type": "search",
@@ -96,7 +81,7 @@
             }
           },
           {
-            "id": "18bdcdbdbc21257b",
+            "id": "a2de11651a4d3562",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
@@ -112,20 +97,20 @@
     "width": 300
   },
   "right": {
-    "id": "411f4983b7e235c8",
+    "id": "1dde3a420d247dc1",
     "type": "split",
     "children": [
       {
-        "id": "0cfbb9ed017e2a30",
+        "id": "e881ef26d31e34a1",
         "type": "tabs",
         "children": [
           {
-            "id": "4ff3b2e26c252fbe",
+            "id": "c01fb08df594f255",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-                "file": "야코비안 행렬.md",
+                "file": "ps/jungol/포크.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -135,25 +120,25 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "야코비안 행렬 의 백링크"
+              "title": "포크 의 백링크"
             }
           },
           {
-            "id": "185e6c716d98dfcc",
+            "id": "0eef2e9bfb6520a9",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "야코비안 행렬.md",
+                "file": "ps/jungol/포크.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "야코비안 행렬 의 나가는 링크"
+              "title": "포크 의 나가는 링크"
             }
           },
           {
-            "id": "0ef420ac569bcd7b",
+            "id": "071d66c1dbffacc9",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -168,7 +153,7 @@
             }
           },
           {
-            "id": "696046350c10879c",
+            "id": "a8bb8c0006280bc4",
             "type": "leaf",
             "state": {
               "type": "all-properties",
@@ -182,26 +167,26 @@
             }
           },
           {
-            "id": "8022cd640cd2e46b",
+            "id": "a43d6430416ddf35",
             "type": "leaf",
             "state": {
               "type": "outline",
               "state": {
-                "file": "진로 인터뷰.md",
+                "file": "ps/jungol/포크.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "개요"
+              "title": "포크 의 개요"
             }
           }
-        ],
-        "currentTab": 4
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -215,45 +200,43 @@
       "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "a76ed00ba8baec14",
+  "active": "655c69ea9c8b7b81",
   "lastOpenFiles": [
-    "MLDL2/1. 선형 회귀 분석 - 이론.md",
-    "진로 인터뷰.md",
-    "소프트 맥스 참고 자료.md",
+    "Deepseek math v2 리뷰.md",
     "딥러닝 수식 가이드.md",
     "인공지능은 미해결 난제를 어떻게 해결하는가?.md",
-    "Deepseek math v2 리뷰.md",
-    "Deepseek math v2 리뷰.pdf",
     "Deepseek math v2 번역.md",
+    "진로 인터뷰.md",
+    "Deepseek math v2 리뷰.pdf",
     "인공지능은 미해결 난제를 어떻게 해결하는가?.pdf",
-    "README.md",
-    "논문/참고.md",
     "논문/원문/05_DLLM(Diffusion-LM)/Guided Star.pdf",
     "논문/원문/01_언어모델(NLP-LLM)/kimi k3.pdf",
     "논문/원문/05_DLLM(Diffusion-LM)/justGRPO.pdf",
+    "소프트 맥스 참고 자료.md",
+    "MLDL2/1. 선형 회귀 분석 - 이론.md",
+    "zero to ml/zero to ml.pdf",
     "zero to ml/zero to ml.md",
     "zero to ml",
-    "zero to ml/zero to ml.pdf",
+    "zero to ml 복사본.pdf",
     "논문/원문/07_강화학습(RL)/deepseekMathV2.pdf",
-    "논문/원문/07_강화학습(RL)/미확인 511383.crdownload",
     "논문/원문/05_DLLM(Diffusion-LM)/diffusiongemma.pdf",
     "MLDL2/1. 선형 회귀 분석 - 코드.md",
+    "MLDL2/2. 다중 선형 회귀 분석 - 이론.md",
+    "MLDL2/2. 다중 선형 회귀 분석 - 코드.md",
+    "MLDL2/0. ML.md",
+    "zero to ml.md",
     "경험.md",
-    "vibe rater/0. cosmos/개인 위키 구상하기 - 이미지.md",
-    "ps/jungol/포크.md",
-    "MLDL/Linear Algebra(선형대수학)/10. rank.md",
-    "lean/NNG LINK.md",
-    "MLDL/Linear Algebra(선형대수학)/11. Null space.md",
-    "MLDL/Linear Algebra(선형대수학)/0. 선형대수학.md",
-    "MLDL/e - Statistics(기초통계학)/1. 변수.md",
-    "img/Pasted Image 20260722212000_565.png",
-    "Latex/3. 기울기.md",
-    "Latex/2. 띄어쓰기.md",
-    "Latex/1. 벡터 표현법.md",
+    "MLDL2/4. 로지스틱 회귀 - 코드.md",
     "MLDL2/5. 소프트 맥스 회귀 - 이론.md",
     "MLDL2/5. 소프트 맥스 회귀 - 코드.md",
-    "MLDL2/0. ML.md",
+    "MLDL2/4. 로지스틱 회귀 - 이론.md",
+    "lean/Lean tutorial.md",
+    "lean/NNG LINK.md",
+    "논문/참고.md",
+    "Deepseek prover 2 리뷰.md",
+    "MLDL/Linear Algebra(선형대수학)/0. 선형대수학.md",
     "MLDL2/0. 야코비안 행렬.md",
+    "야코비안 행렬.md",
     "img/Pasted image 20260804180902.png",
     "img/Pasted image 20260804173246.png",
     "img/Pasted image 20260804173238.png",
@@ -263,6 +246,9 @@
     "img/Pasted image 20260804172639.png",
     "img/Pasted image 20260804170859.png",
     "img/Pasted image 20260804170842.png",
+    "img/Pasted image 20260804170840.png",
+    "Deepseek prover 2.md",
+    "무제 1.canvas",
     "무제.canvas"
   ]
 }

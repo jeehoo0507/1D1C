@@ -105,6 +105,9 @@ $R_{score}$(Score reward)
 
 $$R_{score}(s^′,s) = 1 - \mid s^′ - s\mid$$
 $s^′$ : 예측 점수 $s$ : 정답 점수
-=======
-이 신뢰 높은 데이터를 새로운 라벨 데이터로 만들어 검증기를 학습시킵니다.
->>>>>>> 2b107de7f97b70b26578202730c5a7fcb0759d17
+
+이 신뢰 높은 데이터를 새로운 라벨 데이터로 만들어 검증기를 학습시킨다.
+
+$$\max_{\pi_\varphi} \mathbb{E}_{(X_i, Y_i, s_i) \sim \mathcal{D}_v,\ (V_i', s_i') \sim \pi_\varphi(\cdot \mid X_i, Y_i)}
+\left[ R_{\text{format}}(V_i') \cdot R_{\text{score}}(s_i', s_i) \right]$$ $V'_i$ : 검증기의 최종 응답 $s'_i$ : $V'_i$ 에서 추출된 증명 점수
+해당 수식은 
