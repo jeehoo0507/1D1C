@@ -110,4 +110,3 @@ $s^′$ : 예측 점수 $s$ : 정답 점수
 
 $$\max_{\pi_\varphi} \mathbb{E}_{(X_i, Y_i, s_i) \sim \mathcal{D}_v,\ (V_i', s_i') \sim \pi_\varphi(\cdot \mid X_i, Y_i)}
 \left[ R_{\text{format}}(V_i') \cdot R_{\text{score}}(s_i', s_i) \right]$$ $V'_i$ : 검증기의 최종 응답 $s'_i$ : $V'_i$ 에서 추출된 증명 점수
-해당 수식은 
