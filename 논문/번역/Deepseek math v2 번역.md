@@ -203,11 +203,9 @@ $$\max_{\pi_\varphi} \mathbb{E}_{(X_i,Y_i,s_i)\sim D_v,\ (V'_i,s'_i)\sim\pi_\var
 
 ###### The approach described in Section 2.1.1 trains proof verification through RL to align predicted proof scores with expert annotations, but provides no direct supervision on the identified issues themselves.
 
-<<<<<<< HEAD
-이는 치명적인 취약점을 만든다: 훈련 중 결함 있는 증명(s_i < 1)을 평가할 때, 검증기는 존재하지 않는 문제점을 지어내면서도 정확한 점수를 예측함으로써 온전한 보상을 받 ㅡ,,,,,,,,,,,,,---------------을 수 있으며, 이는 검증기의 신뢰성을 훼손한다.
-=======
+
+이는 치명적인 취약점을 만든다: 훈련 중 결함 있는 증명(s_i < 1)을 평가할 때, 검증기는 존재하지 않는 문제점을 지어내면서도 정확한 점수를 예측함으로써 온전한 보상을 받 을 수 있으며, 이는 검증기의 신뢰성을 훼손한다.
 이는 치명적인 취약점을 만든다: 훈련 중 결함 있는 증명(s_i < 1)을 평가할 때, 검증기는 존재하지 않는 문제점을 지어내면서도 정확한 점수를 예측함으로써 온전한 보상을 받을 수 있으며, 이는 검증기의 신뢰성을 훼손한다.
->>>>>>> 2b107de7f97b70b26578202730c5a7fcb0759d17
 
 ###### This creates a critical vulnerability: when evaluating flawed proofs (where 𝑠𝑖 < 1) during training, the verifier can receive full reward by predicting the correct scores while hallucinating non-existent issues, undermining its trustworthiness.
 
@@ -265,3 +263,135 @@ D_v의 검증 분할에서, 메타 검증기가 평가한 검증기 증명 분�
 
 ---
 
+# 2.2. 증명 생성 (Proof Generation)
+
+## 2.2.1. 정리 증명을 위한 생성기 훈련 (Training a Generator for Theorem Proving)
+
+검증기 π_φ를 생성형 보상 모델로 삼아, 우리는 다음 RL 목적함수로 증명 생성기 π_θ(·|X)를 훈련한다:
+
+###### With verifier 𝜋𝜑 serving as a generative reward model, we train a proof generator 𝜋𝜃(·|𝑋) with the RL objective:
+
+$$\max_{\pi_\theta} \mathbb{E}_{X_i \sim \mathcal{D}_p,\ Y_i \sim \pi_\theta(\cdot|X_i)}[R_Y] \tag{4}$$
+
+여기서 R_Y는 π_φ(·|X_i, Y_i, I_v)가 산출한 증명 점수다.
+
+###### where 𝑅𝑌 is the proof score produced by 𝜋𝜑(·|𝑋𝑖, 𝑌𝑖, I𝑣).
+
+---
+
+## 2.2.2. 자기 검증을 통한 추론 강화 (Enhancing Reasoning via Self-Verification)
+
+증명 생성기가 한 번에 완전히 올바른 증명을 만들어내지 못할 때 — IMO나 CMO 같은 대회의 어려운 문제에서는 흔한 일이다 — 반복적인 검증과 정제가 결과를 개선할 수 있다.
+
+###### When a proof generator fails to produce a completely correct proof in one shot – common for challenging problems from competitions like IMO and CMO – iterative verification and refinement can improve results.
+
+이는 외부 검증기로 증명을 분석하고, 식별된 문제점을 해결하도록 생성기에 프롬프팅하는 것을 포함한다.
+
+###### This involves analyzing the proof with an external verifier and prompting the generator to address identified issues.
+
+그러나 우리는 결정적인 한계를 관찰했다: 생성기에게 증명 생성과 자기 증명 분석을 한 번에 하도록 프롬프팅하면, 외부 검증기가 쉽게 결함을 찾아내는 경우에도 생성기는 자기 증명이 옳다고 주장하는 경향이 있다.
+
+###### However, we observed a critical limitation: when prompted to both generate and analyze its own proof in one shot, the generator tends to claim correctness even when the external verifier easily identify flaws.
+
+다시 말해, 생성기는 외부 피드백에 기반해 증명을 정제할 수는 있지만, 전용 검증기와 같은 엄밀함으로 자신의 작업을 평가하지는 못한다.
+
+###### In other words, while the generator can refine proofs based on external feedback, it fails to evaluate its own work with the same rigor as the dedicated verifier.
+
+이 관찰은 우리가 증명 생성기에 진정한 검증 능력을 부여하도록 이끌었다.
+
+###### This observation motivated us to endow the proof generator with genuine verification capabilities.
+
+훈련 중 우리는 생성기 π_θ가 증명 Y를 생성하고, 이어서 검증기와 동일한 형식 및 루브릭 I_v를 따르는 자기 분석 Z를 생성하도록 프롬프팅한다 (부록 A.1 참조).
+
+###### During training, we prompt the generator 𝜋𝜃 to produce a proof 𝑌 followed by a self-analysis 𝑍 that follows the same format and rubrics I𝑣 as the verifier (see Appendix A.1).
+
+자기 분석에서 예측된 증명 점수를 s'로 표기한다.
+
+###### We denote the proof score predicted in the self-analysis as 𝑠′.
+
+충실한 자기 평가를 보장하기 위해, 우리는 검증기 π_φ를 사용해 두 요소를 모두 평가한다: 증명 Y는 점수 R_Y = s를 받고, 자기 분석 Z는 메타 검증 점수 R_meta(Z) = ms를 받는다.
+
+###### To ensure faithful self-evaluation, we use the verifier 𝜋𝜑 to assess both components: the proof 𝑌 receives score 𝑅𝑌 = 𝑠, and the self-analysis 𝑍 receives a meta-verification score 𝑅meta(𝑍) = 𝑚𝑠.
+
+보상 함수는 이 평가들을 결합한다:
+
+###### The reward function combines these assessments:
+
+$$R = R_{\text{format}}(Y, Z) \cdot (\alpha \cdot R_Y + \beta \cdot R_Z) \tag{5}$$
+
+$$R_Z = R_{\text{score}}(s', s) \cdot R_{\text{meta}}(Z) \tag{6}$$
+
+여기서 R_format(Y, Z)는 증명과 자기 분석이 모두 지정된 형식을 따르는지 확인하고, R_score(s', s)는 정확한 자기 평가에 보상을 준다. 우리는 α = 0.76, β = 0.24로 설정했다.
+
+###### where 𝑅format(𝑌, 𝑍) verifies that both the proof and self-analysis follow the specified format, 𝑅score(𝑠′, 𝑠) rewards accurate self-assessment. We set 𝛼 = 0.76 and 𝛽 = 0.24.
+
+이 보상 구조는 다음과 같은 유인을 만든다:
+
+###### This reward structure creates the following incentives:
+
+• 오류를 충실히 인정하는 것이 옳다고 거짓 주장하는 것보다 더 큰 보상을 받는다.
+
+###### • Faithful acknowledgment of errors is rewarded over false claims of correctness.
+
+• 가장 높은 보상은 올바른 증명을 생성하고 그 엄밀함을 정확히 인식하는 데서 나온다.
+
+###### • The highest rewards come from producing correct proofs and accurately recognizing their rigor.
+
+• 증명 생성기가 높은 보상을 얻는 좋은 전략은, 응답을 확정하기 전에 가능한 한 많은 문제점을 식별하고 해결하는 것이다.
+
+###### • A good strategy to obtain high rewards for the proof generator is to identify and resolve as many issues as possible before finalizing the response.
+
+---
+# 2.3. 증명 검증과 생성 사이의 시너지 (Synergy Between Proof Verification and Generation)
+
+증명 검증기와 생성기는 상승적 순환을 만든다: 검증기가 생성기를 개선하고, 생성기가 개선되면서 현재 검증기의 능력에 도전하는 새로운 증명을 만들어낸다.
+
+###### The proof verifier and generator create a synergistic cycle: the verifier improves the generator, and as the generator improves, it produces new proofs that challenge the verifier's current capabilities.
+
+검증기가 한 번의 시도로는 문제점을 찾아내지 못할 수 있는 이러한 까다로운 사례들은, 검증기 자체를 강화하는 값진 훈련 데이터가 된다.
+
+###### These challenging cases – where the verifier may fail to identify issues in a single attempt – become valuable training data for enhancing the verifier itself.
+
+검증기를 재훈련하고 개선하려면, 새로 생성된 증명들에 대한 라벨링된 정확성 데이터가 필요하다.
+
+###### To retrain and improve the verifier, we need labeled correctness data for newly generated proofs.
+
+수작업 주석은 직관적이긴 하지만, 문제가 어려워지고 오류가 미묘해질수록 점점 더 많은 시간을 잡아먹는다.
+
+###### Manual annotation, while straightforward, becomes increasingly time-consuming as problems grow harder and errors become more subtle.
+
+주석 효율을 높이기 위해, 우리는 증명 하나당 여러 개의 검증기 분석을 생성하여 인간이 검토할 잠재적 문제점들을 드러냈다.
+
+###### To boost annotation efficiency, we generated multiple verifier analyses per proof to surface potential issues for human review.
+
+이 AI 보조 주석 과정에서, 우리는 자동화 수준을 한 단계 더 밀어붙일 수 있게 하는 두 가지 사실을 인식했다:
+
+###### From this AI-assisted annotation process, we recognized two facts that make it feasible to push the level of automation a step further:
+
+1. 검증기 표본을 늘리면 결함 있는 증명에서 실제 문제점을 잡아낼 확률이 높아진다.
+
+###### 1. Scaling verifier samples increases the probability of catching real issues in flawed proofs.
+
+2. 검증기가 식별한 문제점을 검토하는 것이 바로 메타 검증이며, 이는 문제점을 처음부터 찾아내는 것보다 쉽다. 또한 메타 검증은 LLM이 습득하기에 표본 효율이 더 높다.
+
+###### 2. Reviewing the verifier's identified issues is exactly meta-verification, which is easier than identifying issues from scratch. Meta-verification is also more sample-efficient for LLMs to master.
+
+이러한 관찰을 바탕으로, 우리는 다음과 같은 자동 라벨링 과정을 개발했다:
+
+###### Building on these observations, we developed the following automated labeling process:
+
+1. 각 증명에 대해 n개의 독립적인 검증 분석을 생성한다
+
+###### 1. For each proof, generate 𝑛 independent verification analyses
+
+2. 문제점을 보고한 분석(점수 0 또는 0.5)에 대해서는, 식별된 문제를 검증하기 위해 m개의 메타 검증 평가를 생성한다. 과반수의 메타 평가가 그 발견을 확인하면 해당 분석은 유효한 것으로 간주된다
+
+###### 2. For analyses reporting issues (scores 0 or 0.5), generate 𝑚 meta-verification assessments to validate the identified problems. An analysis is deemed valid if the majority of meta-assessments confirm its findings
+
+3. 각 증명에 대해, 가장 낮은 점수를 부여한 분석들을 살펴본다. 그러한 분석이 최소 k개 이상 유효한 것으로 간주되면, 그 증명은 해당 최저 점수로 라벨링된다. 모든 검증 시도에서 정당한 문제점이 발견되지 않으면 그 증명은 1점으로 라벨링된다. 그 외의 경우 증명은 폐기되거나 인간 전문가에게 라벨링을 위해 회부된다
+
+###### 3. For each proof, we examine analyses that assign the lowest score. If at least 𝑘 such analyses are deemed valid, the proof is labeled with that lowest score. If no legitimate issues are identified across all verification attempts, the proof is labeled with 1. Otherwise, the proof is discarded or routed to human experts for labeling
+
+마지막 두 번의 훈련 반복에서, 이 완전 자동화 파이프라인은 인간 주석을 전면적으로 대체했다. 품질 검사 결과 자동 라벨은 전문가 판단과 잘 일치하는 것으로 확인되었다.
+
+###### In our last two training iterations, this fully automated pipeline replaced human annotation entirely. Quality checks confirmed that the automated labels aligned well with expert judgments.
