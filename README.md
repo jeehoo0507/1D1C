@@ -28,3 +28,4 @@
 8월 9일 - zero to ml 만들기
 8월 11일 - deepseek math v2 메소드 초반부 정리
 8월 12일 - 딥러닝 수식 가이드 작성
+8월 13일 - deepseek math v2 메소드 2.1 지점 리뷰 완료 멘토링용 한글 zero to ml 파일 작성

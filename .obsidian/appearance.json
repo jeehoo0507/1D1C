@@ -4,5 +4,6 @@
   "accentColor": "#ffffff",
   "enabledCssSnippets": [
     "heading-size"
-  ]
+  ],
+  "translucency": false
 }
