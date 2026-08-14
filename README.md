@@ -29,3 +29,5 @@
 8월 11일 - deepseek math v2 메소드 초반부 정리
 8월 12일 - 딥러닝 수식 가이드 작성
 8월 13일 - deepseek math v2 메소드 2.1 지점 리뷰 완료 멘토링용 한글 zero to ml 파일 작성
+8월 14일 - tensor 초안 작성
+8월 15일 - ctrls 시작

@@ -39,16 +39,30 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "pytorch/1. 텐서.md",
+                "file": "논문/리뷰/Deepseek math v2 리뷰.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "1. 텐서"
+              "title": "Deepseek math v2 리뷰"
+            }
+          },
+          {
+            "id": "68bb3aab2e395431",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "README.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "README"
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -213,11 +227,19 @@
       "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "5d78d62270ca6f37",
+  "active": "68bb3aab2e395431",
   "lastOpenFiles": [
+    "control s making.md",
+    "control s.md",
+    "무제.md",
+    "논문/리뷰/Deepseek math v2 리뷰.md",
+    "대기열/인공지능은 미해결 난제를 어떻게 해결하는가?.md",
+    "대기열/무제.md",
+    "pytorch/1. 텐서.md",
+    "music/무제.md",
+    "img/Pasted image 20260814013520.png",
     "img/Pasted image 20260814011409.png",
     "pytorch/0. what is pytorch?.md",
-    "pytorch/1. 텐서.md",
     "img/Pasted image 20260814010035.png",
     "pytorch/참고.md",
     "dllm 방법론 평가를 위한 인공어 모델링.md",
@@ -229,7 +251,6 @@
     "MLDL2/5. 소프트 맥스 회귀 - 이론.md",
     "MLDL2/1. 선형 회귀 분석 - 코드.md",
     "논문/번역/Deepseek math v2 번역.md",
-    "논문/리뷰/Deepseek math v2 리뷰.md",
     "논문/원문/07_강화학습(RL)/deepseekMathV2.pdf",
     "img/Pasted image 20260813011228.png",
     "Excalidraw/Drawing 2026-07-22 23.07.37.excalidraw.md",
@@ -242,11 +263,6 @@
     "MLDL2/2. 다중 선형 회귀 분석 - 이론.md",
     "MLDL2/2. 다중 선형 회귀 분석 - 코드.md",
     "MLDL2/3. 릿지 라쏘 회귀 - 이론.md",
-    "MLDL2/1. 선형 회귀 분석 - 이론.md",
-    "MLDL/딥러닝 수식 가이드.md",
-    "대기열/진로 인터뷰.md",
-    "MLDL/폴리시 그라디언트.md",
-    "MLDL/소프트 맥스 참고 자료.md",
     "인공지능은 미해결 난제를 어떻게 해결하는가?.pdf",
     "Deepseek math v2 리뷰.pdf",
     "논문/원문/05_DLLM(Diffusion-LM)/Guided Star.pdf",
@@ -259,8 +275,6 @@
     "img/Pasted image 20260804173201.png",
     "img/Pasted image 20260804172741.png",
     "img/Pasted image 20260804172736.png",
-    "img/Pasted image 20260804172639.png",
-    "img/Pasted image 20260804170859.png",
     "무제 1.canvas",
     "무제.canvas"
   ]
