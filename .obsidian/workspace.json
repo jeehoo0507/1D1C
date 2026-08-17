@@ -53,12 +53,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "README.md",
+                "file": "pytorch/1. 텐서.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "README"
+              "title": "1. 텐서"
             }
           }
         ],
@@ -229,6 +229,13 @@
   },
   "active": "68bb3aab2e395431",
   "lastOpenFiles": [
+    "img/Pasted image 20260816221754.png",
+    "README.md",
+    "vibe rater/manus",
+    "vibe rater/ctrls/ctrls.md",
+    "vibe rater/ctrls/control s making.md",
+    "vibe rater/ctrls/control s.md",
+    "vibe rater/ctrls",
     "control s making.md",
     "control s.md",
     "무제.md",
@@ -243,7 +250,6 @@
     "img/Pasted image 20260814010035.png",
     "pytorch/참고.md",
     "dllm 방법론 평가를 위한 인공어 모델링.md",
-    "README.md",
     "transformer",
     "lean/NNG LINK.md",
     "lean/Lean tutorial.md",
@@ -259,16 +265,10 @@
     "MLDL2/4. 로지스틱 회귀 - 이론.md",
     "MLDL2/4. 로지스틱 회귀 - 코드.md",
     "MLDL2/5. 소프트 맥스 회귀 - 코드.md",
-    "MLDL2/3. 릿지 라쏘 회귀 - 코드.md",
-    "MLDL2/2. 다중 선형 회귀 분석 - 이론.md",
-    "MLDL2/2. 다중 선형 회귀 분석 - 코드.md",
-    "MLDL2/3. 릿지 라쏘 회귀 - 이론.md",
     "인공지능은 미해결 난제를 어떻게 해결하는가?.pdf",
     "Deepseek math v2 리뷰.pdf",
     "논문/원문/05_DLLM(Diffusion-LM)/Guided Star.pdf",
     "논문/원문/01_언어모델(NLP-LLM)/kimi k3.pdf",
-    "논문/원문/05_DLLM(Diffusion-LM)/justGRPO.pdf",
-    "zero to ml/zero to ml.pdf",
     "img/Pasted image 20260804180902.png",
     "img/Pasted image 20260804173246.png",
     "img/Pasted image 20260804173238.png",
