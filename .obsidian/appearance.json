@@ -1,7 +1,7 @@
 {
-  "theme": "obsidian",
-  "cssTheme": "Minimal",
-  "accentColor": "#ffffff",
+  "theme": "moonstone",
+  "cssTheme": "Things",
+  "accentColor": "",
   "enabledCssSnippets": [
     "heading-size"
   ],
