@@ -199,8 +199,13 @@
       "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "5d78d62270ca6f37",
+  "active": "4eb5e502d770b870",
   "lastOpenFiles": [
+    "논문 번역.md",
+    "tailscale.md",
+    "tailscale",
+    "무제.md",
+    "test 프롬프트 - codex.md",
     "1st/Git/5. pull request.md",
     "1st/Git/1. add, commit.md",
     "auto port.md",
@@ -237,16 +242,11 @@
     "1st/논문/원문/LIME",
     "1st/논문/원문/03_멀티모달(Vision-Language)/deepseek vl2",
     "1st/논문/원문/03_멀티모달(Vision-Language)/deepseek vl.pdf",
-    "1st/논문/원문/02_비전(Vision)/sam 3d",
     "2026-08-19.md",
     "qwe.md",
     "templates/temp.md",
     "MLDL2/2. 다중 선형 회귀 분석 - 이론.md",
     "MLDL2/이유한 캐글 커널 커리큘럼.md",
-    "1st/Excalidraw/각 분야 로드맵.md",
-    "vibe rater/ctrls/control s making.md",
-    "vibe rater/ctrls/control s.md",
-    "1st/논문/리뷰/Deepseek math v2 리뷰.md",
     "무제 1.canvas",
     "무제.canvas"
   ]
