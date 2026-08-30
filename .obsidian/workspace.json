@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "무제.md",
+                "file": "Grok Bot.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "무제"
+              "title": "Grok Bot"
             }
           }
         ]
@@ -189,7 +189,11 @@
   },
   "active": "b277a754550df77e",
   "lastOpenFiles": [
-    "무제.md",
+    "1st/Git/3. git branch.md",
+    "Grok Bot.md",
+    "1st/Git/4, github 연결.md",
+    "1st/Git/5. pull request.md",
+    "1st/Git/6. 특정 파일 감지 X.md",
     "1st/논문/원문/03_멀티모달(Vision-Language)/CLIP.pdf",
     "1st/ps/jungol/종이자르기.md",
     "대화.md",
@@ -205,9 +209,7 @@
     "tailscale/tailscale 소개.md",
     "tailscale.md",
     "vibe rater/논문 번역.md",
-    "1st/Git/4, github 연결.md",
     "tailscale",
-    "1st/Git/5. pull request.md",
     "1st/Git/1. add, commit.md",
     "vibe rater/auto port.md",
     "zz. paper/paper.md",
@@ -216,8 +218,6 @@
     "vibe rater/S'LIP.md",
     "zz. paper/VIT.md",
     "zz. paper/VGGNet.md",
-    "zz. paper/CLIP.md",
-    "zz. paper/GoogLeNet.md",
     "img/Pasted image 20260820174903.png",
     "img/Pasted image 20260820171948.png",
     "img/Pasted image 20260820171938.png",
